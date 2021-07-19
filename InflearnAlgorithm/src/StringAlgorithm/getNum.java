@@ -5,7 +5,7 @@ import java.util.Scanner;
 /**Date: 07/20/2021
  * Author: June Park
  * runs fine and returns correct result, however, 
- * says its wrong..im lost
+ * susccess
  * */
 public class getNum {
 	/*Only read number from the input*/
@@ -29,12 +29,13 @@ public String get(String input) {
 	
 	return result;
 }
-public String removeZeroStart(String a) {
+public int removeZeroStart(String a) {
 	String result = "";
 	if(a.charAt(0)=='0') {
 		result = a.substring(1);
 	}
 	else{result = a;}
-	return result;
+	int re = Integer.parseInt(result);
+	return re;
 }
 }
