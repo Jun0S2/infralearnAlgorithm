@@ -21,7 +21,10 @@ public class reverseString {
 		}
 		//call non static method;
 		reverseString ref = new reverseString();
-		System.out.println(ref.returnReversedString(numbers, store));
+		ArrayList<String> result = ref.returnReversedString(numbers, store);
+		
+		for(String element: result)
+		System.out.println(element);
 	}
 	
 	public ArrayList<String> returnReversedString(int numbers, String[] input){
