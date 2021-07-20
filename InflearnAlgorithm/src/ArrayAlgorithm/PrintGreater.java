@@ -20,6 +20,7 @@ public class PrintGreater {
 		PrintGreater p = new PrintGreater();
 		int comp = p.target(n, input);
 		p.printGreater(input, comp);
+		//혹시 숫자로 뱉어야하나?
 	}
 	public void printGreater (int[] input, int compareWith) {
 		String result ="";
@@ -29,7 +30,8 @@ public class PrintGreater {
 			}
 			
 		}
-		System.out.println(result);
+		//System.out.println(result);
+		//to String array
 	}
 	public int target(int n,int[] input) {
 		int targetIndex=0;
